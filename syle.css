@@ -1,0 +1,126 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@400;500&family=Spline+Sans&display=swap');
+
+/* font-family: 'Oleo Script Swash Caps', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Spline Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* Sub Header Style */
+
+.sub-header {
+    height: auto;
+    line-height: 30px;
+    /* padding: ; */
+}
+
+.sub-header img {
+    height: 60px;
+    width: 60px;
+}
+.sub-header h3 {
+    color: #19bb44;
+}
+
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+header {
+    /* position: absolute; */
+    background: #242121;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.main-header .main_menu > .menu_item {
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+    /* border-right: 1px dotted rgb(255, 0, 55); */
+}
+
+.main-header .main_menu > .menu_item > .sub__menu {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 300px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #9e9e9e;
+    padding-left: 0;
+    /* padding-top: 10px; */
+    border-top: 3px solid #19bb44;
+    transform: translateY(12px);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.main-header .main_menu > .menu_item:hover .sub__menu {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-header .main_menu > .menu_item > .sub__menu > .menu_item {
+    display: block;
+}
+.main-header .main_menu > .menu_item > .sub__menu > .menu_item a{
+    display: block;
+    padding: 4px 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #070414;
+}
+
+.main-header .main_menu > .menu_item > .sub__menu >  li {
+    border-bottom: 1px solid #979797;
+    font-weight: 600;
+    padding-left: 2px;
+}
+
+.main-header .main_menu > .menu_item > .sub__menu li a:hover {
+    background-color: #19bb44;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.main-header .main_menu > .menu_item > a {
+    display: block;
+    padding: 6px 0;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    color: #e4dede;
+    font-weight: 500;
+}
+
+.main-header .main_menu > .menu_item i {
+    padding-right: 8px;
+    font-weight: 800;
+}
